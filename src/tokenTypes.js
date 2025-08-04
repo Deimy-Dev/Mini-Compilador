@@ -1,0 +1,87 @@
+// src/tokenTypes.js
+
+// Exporta un objeto que representa todos los tipos posibles de tokens
+// que el analizador léxico puede reconocer en el código fuente.
+module.exports = {
+  // Literales
+  Number: "Number",
+  Float: "Float",
+  StringLiteral: "StringLiteral",
+  Comment: "Comment",
+
+  // Identificadores y palabras clave
+  Identifier: "Identifier",
+  Let: "Let",
+  Mut: "Mut",
+  If: "If",
+  Else: "Else",
+  Match: "Match",
+  While: "While",
+  Loop: "Loop",
+  Fn: "Fn",
+  Return: "Return",
+  Break: "Break",
+  Continue: "Continue",
+  Struct: "Struct",
+  Enum: "Enum",
+  Impl: "Impl",
+  Trait: "Trait",
+  Mod: "Mod",
+  Use: "Use",
+  Const: "Const",
+  Static: "Static",
+  Async: "Async",
+  Await: "Await",
+  For: "For",
+  In: "In",
+  Pub: "Pub",
+  Crate: "Crate",
+  Super: "Super",
+  SelfLower: "SelfLower",
+  SelfUpper: "SelfUpper",
+  Type: "Type",
+  Where: "Where",
+  Move: "Move",
+  Unsafe: "Unsafe",
+
+  // Operadores
+  Assign: "=",
+  Plus: "+",
+  Minus: "-",
+  Asterisk: "*",
+  Slash: "/",
+  Percent: "%",
+  Caret: "^",
+  Not: "!",
+  And: "&&",
+  Or: "||",
+  BitAnd: "&",
+  BitOr: "|",
+  Shl: "<<",
+  Shr: ">>",
+  Equal: "==",
+  NotEqual: "!=",
+  LessThan: "<",
+  GreaterThan: ">",
+  LessEqual: "<=",
+  GreaterEqual: ">=",
+  Arrow: "=>",
+  FatArrow: "->",
+
+  // Separadores
+  LParen: "(",
+  RParen: ")",
+  LBrace: "{",
+  RBrace: "}",
+  LBracket: "[",
+  RBracket: "]",
+  Semicolon: ";",
+  Colon: ":",
+  Comma: ",",
+  Dot: ".",
+  DoubleColon: "::",
+
+  // Otros
+  EOF: "EOF",
+  Error: "Error"
+};
