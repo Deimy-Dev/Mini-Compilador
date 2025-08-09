@@ -1,0 +1,60 @@
+<!--Deimy Minaya 1-21-0568-->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Mini Compilador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+  <h1>Mini Compilador</h1>
+
+  <label>Código fuente:</label>
+  <textarea id="source">
+    // Ejemplo:
+    let x = 2 + 3 * (4 - 1);
+    let y = x + 10;
+    x = x + 1;
+    print(y);
+    print(x + 2);
+  </textarea>
+
+  <div>
+    <button id="run">Compilar y Ejecutar</button>
+  </div>
+
+  <div class="flex-row">
+
+    <div class="box">
+      <h3>Tokens</h3>
+      <pre id="tokens"></pre>
+    </div>
+
+    <div class="box">
+      <h3>AST</h3>
+      <pre id="ast"></pre>
+    </div>
+
+    <div class="box">
+      <h3>Código Intermedio (TAC)</h3>
+      <pre id="tac"></pre>
+    </div>
+
+    <div class="box">
+      <h3>Tabla de símbolos</h3>
+      <pre id="symbols"></pre>
+    </div>
+
+    <div class="box">
+      <h3>Salida (print)</h3>
+      <pre id="output"></pre>
+    </div>
+
+  </div>
+
+  </div>  
+  <script type="module" src="main.js"></script>
+
+</body>
+</html>
